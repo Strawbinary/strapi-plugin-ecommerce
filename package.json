@@ -1,11 +1,29 @@
 {
-  "name": "e-commerce",
+  "name": "@strawbinarycorp/strapi-plugin-ecommerce",
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
-  "strapi": {
-    "name": "e-commerce",
-    "description": "Description of e-commerce plugin",
-    "kind": "plugin"
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "e-commerce"
+  ],
+  "homepage": "https://github.com/Strawbinary/strapi-plugin-ecommerce#readme",
+  "bugs": {
+    "url": "https://github.com/Strawbinary/strapi-plugin-ecommerce/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strawbinary/strapi-plugin-ecommerce.git"
+  },
+  "license": "MIT",
+  "author": "Strawbinary GbR",
+  "maintainers": [
+    "Strawbinary GbR",
+    "Michael Sadcenko"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.server.json",
+    "develop": "tsc -p tsconfig.server.json -w"
   },
   "dependencies": {
     "@strapi/design-system": "^1.6.3",
@@ -32,21 +50,13 @@
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.2.1"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "maintainers": [
-    {
-      "name": "A Strapi developer"
-    }
-  ],
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "scripts": {
-    "develop": "tsc -p tsconfig.server.json -w",
-    "build": "tsc -p tsconfig.server.json"
-  },
-  "license": "MIT"
+  "strapi": {
+    "name": "e-commerce",
+    "description": "Description of e-commerce plugin",
+    "kind": "plugin"
+  }
 }
